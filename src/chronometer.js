@@ -31,11 +31,7 @@ class Chronometer {
 
   computeTwoDigitNumber(value) {
     // ... your code goes here
-    // let str = ":";
-    // let minutes = this.getMinutes();
-    // let seconds = this.getSeconds();
-    // console.log(minutes + str + seconds);
-    // return minutes + str + seconds;
+
     let newValue = JSON.stringify(value);
     if (newValue.length === 1) {
       return "0" + newValue;
@@ -57,7 +53,7 @@ class Chronometer {
     // ... your code goes here
     let minutes = this.computeTwoDigitNumber(this.getMinutes());
     let seconds = this.computeTwoDigitNumber(this.getSeconds());
-    console.log(minutes + ":" + seconds);
+
     return `${minutes}:${seconds}`;
   }
 }
